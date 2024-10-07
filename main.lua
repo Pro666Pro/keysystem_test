@@ -13,25 +13,21 @@ local Window = OrionLib:MakeWindow({IntroText = "key system test", IntroIcon = "
 
 OrionLib:MakeNotification({Name = "Warning",Content = "Use at your own risk.",Image = "rbxassetid://7733658504",Time = 5})
 
-local Script = Window:MakeTab({
+local Key = Window:MakeTab({
 	Name = "Key",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
-local Scripts = Script:AddSection({
-	Name = "Key System"
-})
-
 _G.Key = loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/key/main/main.lua'))()
 
-Scripts:AddTextbox({
-	Name = "Enter Key",
-  	Default = "Key",
-  	TextDisappear = false,
-	Callback = function(Value)
+Misc1:AddTextbox({
+    Name = "Input Key",
+    Default = "",
+    TextDisappear = false,
+    Callback = function(Value)
 _G.KeyValue = Value
-	 end
+    end
 })
 
 Scripts:AddButton({
