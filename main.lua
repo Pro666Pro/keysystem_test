@@ -20,8 +20,8 @@ _G.KeyValue = "if you see it, don't skid or else..."
 
 Scripts:AddTextbox({
 	Name = "Enter Key",
-  Default = "Key",
-  TextDisappear = false,
+  	Default = "Key",
+  	TextDisappear = false,
 	Callback = function(Value)
 _G.KeyValue = Value
 	 end
