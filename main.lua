@@ -21,7 +21,7 @@ local Key = Window:MakeTab({
 
 _G.Key = loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/key/main/main.lua'))()
 
-Misc1:AddTextbox({
+Key:AddTextbox({
     Name = "Input Key",
     Default = "",
     TextDisappear = false,
@@ -30,7 +30,7 @@ _G.KeyValue = Value
     end
 })
 
-Scripts:AddButton({
+Key:AddButton({
 	Name = "Check Key",
 	Callback = function()
 if _G.Key == _G.KeyValue then
