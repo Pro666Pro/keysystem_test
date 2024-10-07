@@ -1,3 +1,11 @@
+function StartScript()
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Credits",Text = "script by nexer" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
+end
+
+function AccessDenied() 
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Wrong Key",Text = "Access Denied" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
+end
+
 local GameName = "key system- by nexer"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
@@ -35,11 +43,3 @@ else
 AccessDenied() 
 	 end
 })
-
-function StartScript()
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Credits",Text = "script by nexer" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
-end
-
-function AccessDenied() 
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Wrong Key",Text = "Access Denied" ,Duration = 1000, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "OK"})
-end
