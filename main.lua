@@ -15,7 +15,7 @@ local Scripts = Script:AddSection({
 	Name = "Key System"
 })
 
-_G.Key = skibidi
+_G.Key = loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/key/main/main.lua'))()
 
 Scripts:AddTextbox({
 	Name = "Enter Key",
