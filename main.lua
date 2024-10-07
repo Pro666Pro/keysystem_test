@@ -16,7 +16,6 @@ local Scripts = Script:AddSection({
 })
 
 _G.Key = loadstring(game:HttpGet"https://raw.githubusercontent.com/Pro666Pro/key/main/main.lua")()
-_G.KeyValue = "if you see it, don't skid or else..."
 
 Scripts:AddTextbox({
 	Name = "Enter Key",
